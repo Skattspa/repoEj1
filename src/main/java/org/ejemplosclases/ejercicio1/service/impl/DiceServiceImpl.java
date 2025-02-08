@@ -18,7 +18,7 @@ public class DiceServiceImpl implements DiceService {
     public DiceServiceImpl(ResultRepository resultRepository) {
         this.resultRepository = resultRepository;
     }
-
+    // Se ejecuta el lanzamiento de los dados y se guardan los resultados
     @Override
     public void rollDice(int diceCount) {
         for (int i = 1; i <= diceCount; i++) {
@@ -34,12 +34,13 @@ public class DiceServiceImpl implements DiceService {
             resultRepository.save(diceResult);
         }
     }
-
+    // se obtienen los resultados
     @Override
     public List<DiceResult> getResults() {
         return resultRepository.findAll();
     }
 
+    // se reinicia el juego
     @Override
     public void resetGame() {
         resultRepository.clear();

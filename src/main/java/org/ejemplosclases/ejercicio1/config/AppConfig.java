@@ -4,5 +4,5 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
-    // Configuration beans if needed
+    // Aqui se pueden definir los beans que se necesiten
 }

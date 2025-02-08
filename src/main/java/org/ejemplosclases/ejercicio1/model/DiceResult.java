@@ -3,6 +3,7 @@ package org.ejemplosclases.ejercicio1.model;
 import java.util.Map;
 
 public class DiceResult {
+    // Clase que representa el resultado de un lanzamiento de dados
     private int diceNumber;
     private int result;
     private Map<String, String> conditions; // Stores any special conditions affecting the roll

@@ -8,6 +8,7 @@ import java.util.List;
 
 @Repository
 public class ResultRepository {
+    // Clase que simula un repositorio de resultados de lanzamientos de dados
     private final List<DiceResult> results = new ArrayList<>();
 
     public void save(DiceResult result) {
